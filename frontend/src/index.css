@@ -1,0 +1,161 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
+  background: #f4f6f9;
+  color: #1a1a1a;
+}
+
+a {
+  color: inherit;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.navbar {
+  background: #0f4c81;
+  color: white;
+  padding: 14px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  margin-left: 18px;
+  font-size: 14px;
+}
+
+.navbar .brand {
+  font-weight: 700;
+  font-size: 18px;
+  margin-left: 0;
+}
+
+.card {
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+  margin-bottom: 18px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 14px;
+}
+
+.stat-box {
+  background: white;
+  border-radius: 10px;
+  padding: 18px;
+  text-align: center;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+}
+
+.stat-box .value {
+  font-size: 28px;
+  font-weight: 700;
+  color: #0f4c81;
+}
+
+.stat-box .label {
+  font-size: 13px;
+  color: #666;
+  margin-top: 4px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 420px;
+}
+
+input, select, textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+button {
+  padding: 10px 16px;
+  background: #0f4c81;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  width: fit-content;
+}
+
+button:hover {
+  background: #0c3c68;
+}
+
+button.secondary {
+  background: #6c757d;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+th, td {
+  text-align: left;
+  padding: 10px 12px;
+  border-bottom: 1px solid #eee;
+  font-size: 14px;
+}
+
+th {
+  background: #f0f2f5;
+}
+
+.badge {
+  padding: 3px 10px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 600;
+  display: inline-block;
+}
+
+.badge.PASS, .badge.APPROVED, .badge.CERTIFICATE_ISSUED, .badge.VALID {
+  background: #d4edda;
+  color: #155724;
+}
+
+.badge.FAIL, .badge.REJECTED {
+  background: #f8d7da;
+  color: #721c24;
+}
+
+.badge.SUBMITTED, .badge.UNDER_REVIEW, .badge.SCHEDULED, .badge.VERIFICATION_IN_PROGRESS {
+  background: #fff3cd;
+  color: #856404;
+}
+
+.error-text {
+  color: #c0392b;
+  font-size: 13px;
+}
+
+.muted {
+  color: #777;
+  font-size: 13px;
+}
